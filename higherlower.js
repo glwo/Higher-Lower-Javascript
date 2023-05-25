@@ -21,10 +21,6 @@ function doGuess() {
 
     let message = document.getElementById("message");
 
-    // if (!guess) {
-    //     message.innerHTML = "Please enter a guess!"
-    // }
-
     if (isNaN(guess)) {
         message.innerHTML = "That is not a number!";
     }
