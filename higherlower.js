@@ -46,11 +46,13 @@ function doGuess() {
             message.innerHTML = `You got it! It took you ${guesses.length} try and your guess was ${guesses.join(", ")}.`;
             document.getElementById("guessButton").disabled = true; // Disable the guess button
             document.getElementById("restartButton").style.display = "block"; // Show the restart button
+            document.getElementById("guessForm").style.display = "none"; // Hide the guessForm div
         }
         else {
             message.innerHTML = `You got it! It took you ${guesses.length} tries and your guesses were ${guesses.join(", ")}.`;
             document.getElementById("guessButton").disabled = true; // Disable the guess button
             document.getElementById("restartButton").style.display = "block"; // Show the restart button
+            document.getElementById("guessForm").style.display = "none"; // Hide the guessForm div
         }
     }
 
